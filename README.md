@@ -3,21 +3,27 @@ This repository contains the project files due by November 20, 2023
 
 ## Requirements
 
-Il est nécessaire d'installer les librairies ``` marc ``` et ```mchmm``` pour exécuter correctement les fichiers du repository.
+It is necessary to install the ``` marc ``` and ```mchmm``` libraries to correctly run the repository files.
 
-pour ce faire on peut utiliser les commandes suivantes:
+to do this you can use the following commands in a python environment:
 ```bash
 pip install marc
 pip install mchmm
 
 ```
-donner version ```numpy```...
+This repository also uses ```numpy 1.19.5```, ```pandas 0.25.1```and ```matplotlib 3.1.1```.
 
 ## Import data
+To execute the files it is necessary to import the match json data by replacing "path_to_file" (as in the following cell) with your own path and place it in the corresponding cell of the notebook <https://github.com/GaspardAndre/projet-test/blob/main/Project.ipynb> and in begining of the python file <https://github.com/GaspardAndre/projet-test/blob/main/match_generation.py>:
+```bash
+with open('path_to_file/match_1.json') as mon_fichier:
+    match_1 = json.load(mon_fichier)
+with open('path_to_file/match_2.json') as mon_fichier:
+    match_2 = json.load(mon_fichier)
+```
 
 ## Description
-Le notebook <lien> répond au question du projet et le fichier python <> contient plus spécifiquement la fonction python ```generate_match``` qui permet de générer de nouvelles données de match comme demander dans l'énoncé. Le fichier python contient également quelques créations de nouveau jeu à partir de la fonction ```generate_match``` dans les variables ```gen_match```, ```gen_match_2```, ```gen_match_3``` et ```gen_match_4```.
-
+The notebook <https://github.com/GaspardAndre/projet-test/blob/main/Project.ipynb> answers the project's questions and the python file <https://github.com/GaspardAndre/projet-test/blob/main/match_generation.py> more specifically contains the python function ```generate_match``` which allows you to generate new match data as requested in the statement. The python file also contains some new game creations from the ```generate_match``` function in the variables ```gen_match```, ```gen_match_2```, ```gen_match_3``` and ```gen_match_4```.
 
 
 
