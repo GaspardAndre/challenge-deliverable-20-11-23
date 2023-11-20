@@ -109,4 +109,3 @@ gen_match_4 = generate_match(match_2, 900)
 
 match_test = generate_match(match_1, 60)
 
-print([el["label"] for el in match_test])
